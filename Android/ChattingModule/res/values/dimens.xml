@@ -1,0 +1,176 @@
+<resources>
+	
+    <!-- basic margin -->
+    <dimen name="default_margin_LeftRight_1">12dip</dimen>
+    <dimen name="default_margin_LeftRight_2">15dip</dimen>
+    <dimen name="default_margin_LeftRight_3">10dip</dimen>
+    <dimen name="default_margin_TopBottom_1">15dip</dimen>
+    <dimen name="default_margin_TopBottom_2">10dip</dimen>
+    
+    <!--  fontSize -->
+    <dimen name="fontSize_stopwatch_divider">40sp</dimen>
+    <dimen name="fontSize_extraBig">30sp</dimen>
+    <dimen name="fontSize_Big">28sp</dimen>
+    <dimen name="fontSize_Mid">24sp</dimen>
+    <dimen name="fontSize_Small">20sp</dimen>
+    <dimen name="fontSize_18">18sp</dimen>
+    <dimen name="fontSize_17">17sp</dimen>
+    <dimen name="fontSize_16">16sp</dimen>
+    <dimen name="fontSize_15">15sp</dimen>
+    <dimen name="fontSize_14">14sp</dimen>
+    <dimen name="fontSize_13">13sp</dimen>
+    <dimen name="fontSize_12">12sp</dimen>
+    <dimen name="fontSize_11">11sp</dimen>
+    <dimen name="fontSize_10">10sp</dimen>
+    <dimen name="fontSize_9">9sp</dimen>
+    <dimen name="fontSize_8">8sp</dimen>
+    <dimen name="fontSize_7">7sp</dimen>
+    <dimen name="fontSize_6">6sp</dimen>
+	<dimen name="fontSize_InfoPwd">20sp</dimen>    
+    <dimen name="fontSize_WheelItem">12sp</dimen>
+    
+    <!-- Card -->
+    <dimen name="card_base_empty_height">72dp</dimen>
+    <dimen name="card_birth_width">350dp</dimen>
+    <dimen name="card_mayknow_margin_top">3dp</dimen>
+    <dimen name="drawer_width">200dp</dimen>
+    
+    <!--  buttonSize -->
+    <dimen name="buttonSize_1">12dp</dimen>
+    <dimen name="buttonSize_2">11dp</dimen>
+    <dimen name="buttonSize_3">8dp</dimen>
+    <dimen name="buttonSize_4">9dp</dimen>
+    
+    <!-- 메인화면 -->
+    <dimen name="layoutHeader_h">44dip</dimen>
+    <dimen name="layoutHeader_button_w">60dip</dimen>
+    <dimen name="layoutHeader_button_h">29dip</dimen>
+    <dimen name="layoutHeader_button_marginSide">7dip</dimen>
+    <dimen name="layoutHeader_attendanceNoti_marginSide">10dip</dimen>
+    
+    <dimen name="captureDialog_marginTopBottom">15dip</dimen>
+    
+    <dimen name="recButton_radius">7dp</dimen>
+    <dimen name="roundButton_radius">6dp</dimen>
+    <dimen name="roundMoreButton_radius">20dp</dimen>
+    <dimen name="roundButton_padding">2dp</dimen>
+    <dimen name="roundButton_bottomShadow_size">1dp</dimen>
+    
+    <dimen name="wheel_marginLeft">25dip</dimen>
+    <dimen name="wheel_lineSpace">5dip</dimen>
+    
+    <dimen name="lineHeader_paddingLeft">10dp</dimen>
+    
+    <dimen name="card_radius">2dp</dimen>
+    
+    <!-- chat -->
+    <dimen name="chat_sideMargin">40dip</dimen>
+    <dimen name="chat_dateMargin">5dip</dimen>
+    <dimen name="chat_marginBetween">4dip</dimen>
+    <dimen name="chatTime_marginBottom">2dip</dimen>
+    <dimen name="chatroom_actionBar_line">0.5dip</dimen>
+    <dimen name="chatroom_bottomBar_h">50dip</dimen>
+    
+    <!-- login -->
+    <dimen name="loginEditText_h">37dip</dimen>
+    <dimen name="loginSmallButton_w">110dip</dimen>
+    <dimen name="loginSmallButton_h">29dip</dimen>
+    <dimen name="loginSmallButton_marginSide">6dip</dimen>
+    <dimen name="bigButton_w">300dip</dimen>
+    <dimen name="bigButton_h">39dip</dimen>
+    <dimen name="bigButton_Box">60dip</dimen>
+    <dimen name="bigButton_marginBetween">10dip</dimen>
+    
+    <dimen name="loginAutoLogin_marginCenter">5dip</dimen>
+    <dimen name="loginAutoLoginBox_marginTop">20dip</dimen>
+    <dimen name="loginAutoLoginBox_marginBottom">10dip</dimen>
+    <dimen name="loginLine_marginBottom">30dip</dimen>
+    
+    <dimen name="cardMargin">12dp</dimen>
+    <dimen name="cardMarginDivider">2dp</dimen>
+    <dimen name="cardMarginParentBottom">15dp</dimen>
+    
+    <!-- userInfo -->
+    <dimen name="userInfoheaderRow_h">20dp</dimen>
+    <dimen name="userInfoSectionRow_h">50dp</dimen>
+    <dimen name="userInfo_paddingLeft">10dp</dimen>
+    
+    <dimen name="button_passwordRest_w">170dp</dimen>
+    
+    <dimen name="circle_colorPicker_size">30dp</dimen>
+    
+    <dimen name="circle_colorPicker_padding">10dp</dimen>
+    
+    <dimen name="StudyLogListSide_padding">5dp</dimen>
+    <dimen name="StudyLogList_studyTime_h">40dp</dimen>
+    <dimen name="StudyLogList_planTime_h">20dp</dimen>
+    
+    <dimen name="StudyLogList_WeekTotal_h">40dp</dimen>
+    <dimen name="StudyLogList_circleMargin">4dip</dimen>
+    
+    
+    <dimen name="groupStudyLogo_textSize_timeMain">@dimen/fontSize_12</dimen>
+    <dimen name="groupStudyLogo_textSize_timeSub">@dimen/fontSize_10</dimen>
+    <dimen name="groupStudyLogo_textSize_timeTotal">@dimen/fontSize_12</dimen>
+    <dimen name="groupStudyLogo_textSize_timeDayOfWeek">@dimen/fontSize_17</dimen>
+    
+    <dimen name="studyRoom_card_marginTopBottom">5dip</dimen>
+    <dimen name="studyRoom_card_marginSide">10dip</dimen>
+    
+    <dimen name="main_stopwatch_card_sideMargin">10dip</dimen>
+    <dimen name="card_background_default_radius">2dip</dimen>
+    <dimen name="card_header_simple_title_margin_left">10dp</dimen>
+    
+    <dimen name="stopwatchDivider">10dip</dimen>
+    
+    <dimen name="switch_w">85dip</dimen>
+    <dimen name="switch_padding">5dip</dimen>
+    <dimen name="inner_padding">7dip</dimen>
+    
+    <dimen name="list_paddingTop">5dp</dimen>
+    
+    <dimen name="studyLogTab_h">48dip</dimen>
+    <dimen name="studyLogTab_marginBetween">10dip</dimen>
+    
+    <dimen name="studyLogDailyItem_break_h">40dip</dimen>
+    <dimen name="subject_row_h">60dip</dimen>
+    
+    <!-- 원형유저이미지 -->
+    <dimen name="list_item_user_image1">36dip</dimen>
+    <dimen name="list_item_user_image1_background">40dip</dimen>
+    <dimen name="list_item_user_image2">45dip</dimen>
+    <dimen name="list_item_user_image2_background">50dip</dimen>
+    <dimen name="list_item_user_image3">93dip</dimen>
+    <dimen name="list_item_user_image3_background">98dip</dimen>
+    
+    <dimen name="chatPicSize">120dip</dimen>
+    <dimen name="titleBar_h">50dip</dimen>
+    <!--   -->
+    
+    <dimen name="chatPicSize2">150dip</dimen>
+    <dimen name="chatPicSizeheight">250dip</dimen>
+    
+    <dimen name="chatDrawer_margineLeft">70dip</dimen>
+    
+    <!-- 연락처 -->
+    <dimen name="contactListItem_paddingSide">13dip</dimen>
+    <dimen name="contactListItem_paddingTopBottom">15dip</dimen>
+    <dimen name="contactListItem_radioButton_w">20dip</dimen>
+    <dimen name="contactListItem_radioButton_h">20dip</dimen>
+    <dimen name="contactListItem_radioButton_marginRight">5dip</dimen>
+    <dimen name="contactListItem_header_h">45dip</dimen>
+    <dimen name="contactListItem_section_h">50dip</dimen>
+    
+    <!--  -->
+    <dimen name="controlButtonMargin">10dp</dimen>
+    <dimen name="buttonTextSize">20dp</dimen>
+    
+    <!--  -->
+    <dimen name="g_width">157.5px</dimen>
+    
+     <dimen name="profile_bot_height">215dip</dimen>
+     
+      <!--  -->
+     <dimen name="keyboard_height">230dip</dimen> 
+     
+</resources>

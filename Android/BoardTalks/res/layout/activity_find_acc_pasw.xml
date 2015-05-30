@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:padding="10dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/input_del_btn_dw"
+        android:layout_gravity="right"
+        android:onClick="exit"/>
+    
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="10dp"
+        android:ems="10" 
+        android:background="@drawable/button_round_red"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="이름">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="10dp"
+        android:ems="10"
+        android:background="@drawable/button_round_red"
+        android:inputType="date" 
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="생년월일"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/red"
+        android:text="계정 찾기" 
+        android:layout_gravity="right"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="10dp"
+        android:ems="10" 
+        android:background="@drawable/button_round_red"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="계정"/>
+
+    <EditText                      
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="10dp"
+        android:ems="10"
+        android:inputType="date" 
+        android:background="@drawable/button_round_red"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="생년월일"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/red"
+        android:text="비밀번호 찾기" 
+        android:layout_gravity="right"/>
+
+</LinearLayout>

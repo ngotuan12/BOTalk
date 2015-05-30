@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:gravity="center_vertical"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/imgViewAvatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/kakao_default_profile_image"      
+        android:adjustViewBounds="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" 
+        android:layout_toLeftOf="@+id/imgViewAvatar"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" 
+        android:layout_below="@+id/tv_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/red"/>
+    
+    <TextView
+        android:id="@+id/tv_time_posted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015.05.01" 
+        android:layout_below="@+id/tv_author"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/red"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_below="@+id/imgViewAvatar"
+        android:layout_alignParentRight="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_delete" 
+            android:adjustViewBounds="true"/>
+        
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_share" 
+            android:adjustViewBounds="true"/>
+        
+        <TextView
+            android:id="@+id/tv_shared_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="57" />
+    </LinearLayout>
+
+</RelativeLayout>

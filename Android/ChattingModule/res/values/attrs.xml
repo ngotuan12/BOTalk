@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ButtonTypeCustomView">
+        <attr name="text1" format="string" />
+        <attr name="text1PaddingLeft" format="reference" />
+        <attr name="text1Color" format="reference" />
+        <attr name="text1ColorOn" format="reference" />
+        <attr name="text1ColorOff" format="reference" />
+        <attr name="text1TextColorMode">
+            <enum name="white" value="1" />
+            <enum name="gray_whiteShadow" value="2" />
+        </attr>
+        <attr name="buttonClickBackground" format="reference" />
+        <attr name="lineColor" format="reference" />
+        <attr name="text1Size" format="dimension" />
+        <attr name="text2" format="string" />
+        <attr name="buttonIcon" format="reference" />
+        <attr name="buttonIconDisable" format="reference" />
+        <attr name="buttonBackground" format="reference" />
+        <attr name="checkBoxOn" format="reference" />
+        <attr name="checkBoxOff" format="reference" />
+        <attr name="backgroundOn" format="reference" />
+        <attr name="backgroundOff" format="reference" />
+        <attr name="paddingLeft" format="dimension" />
+        <attr name="paddingRight" format="dimension" />
+        <attr name="paddingTop" format="dimension" />
+        <attr name="paddingBottom" format="dimension" />
+        <attr name="textPadding" format="dimension" />
+        <attr name="order">
+            <enum name="iconText" value="1" />
+            <enum name="textIcon" value="2" />
+        </attr>
+        <attr name="gravity">
+            <enum name="center" value="1" />
+            <enum name="left" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CustomRadioGroup">
+        <attr name="cancelMode" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomProgressChecman">
+        <attr name="progress" format="integer" />
+        <attr name="progressMax" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="WriteButtonGroup">
+        <attr name="titleHeader" format="string" />
+        <attr name="textLeft" format="string" />
+        <attr name="textRight" format="string" />
+        <attr name="leftButton">
+            <enum name="buttonDisable" value="1" />
+            <enum name="buttonRed" value="2" />
+            <enum name="buttonBlue" value="3" />
+            <enum name="buttonWhite" value="4" />
+            <enum name="buttonIOS" value="5" />
+        </attr>
+        <attr name="rightButton">
+            <enum name="buttonDisable" value="1" />
+            <enum name="buttonRed" value="2" />
+            <enum name="buttonBlue" value="3" />
+            <enum name="buttonWhite" value="4" />
+            <enum name="buttonIOS" value="5" />
+        </attr>
+        <attr name="titleType">
+            <enum name="plainTitle" value="1" />
+            <enum name="shadowWhiteTitle" value="2" />
+        </attr>
+        <attr name="sizeLeft" format="dimension" />
+        <attr name="sizeRight" format="dimension" />
+        <attr name="colorLeft" format="dimension" />
+        <attr name="colorRight" format="dimension" />
+        <attr name="colorTitle" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="EditTextDelete">
+        <attr name="hint" format="string" />
+        <attr name="useDelete" format="boolean" />
+        <attr name="textStyle">
+            <enum name="normal" value="1" />
+            <enum name="bold" value="2" />
+            <enum name="italic" value="3" />
+            <enum name="boldItalic" value="4" />
+        </attr>
+        <attr name="inputType">
+            <enum name="normal" value="0" />
+            <enum name="password" value="1" />
+        </attr>
+        <attr name="textSize" format="dimension" />
+        <attr name="editTextPadding" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CustomSpinner">
+        <attr name="uiType">
+            <enum name="option_popup" value="0" />
+            <enum name="recommend" value="1" />
+            <enum name="statistics" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CustomRatingBar">
+        <attr name="starOver" format="reference" />
+        <attr name="starOff" format="reference" />
+        <attr name="marginCenter" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ImagePreView">
+        <attr name="sizeWidth" format="dimension" />
+        <attr name="sizeHeight" format="dimension" />
+    </declare-styleable>
+
+</resources>

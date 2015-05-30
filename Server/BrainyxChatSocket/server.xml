@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<project basedir="." default="archive" name="TuanNA">
+	<property name="dest" value="bin" />
+	<property name="src" value="src" />
+	<path id="project.class.path">
+		<pathelement location="${dest}" />
+	</path>
+
+	<target depends="cleanup" name="archive">
+		<jar compress="true" destfile="jar/chatting-server.jar">
+			<fileset dir="${dest}">
+				<!--<exclude name="com/fis/**"/> -->
+				<include name="com/chatting/**/*.class" />
+				<exclude name="com/chatting/**/*.sql" />
+				<exclude name="com/chatting/**/*.txt" />
+				<exclude name="com/chatting/**/*.xls" />
+			</fileset>
+			<manifest>
+				<attribute name="Main-Class" value="com.chatting.server.MultiChatServer" />
+			</manifest>
+
+		</jar>
+	</target>
+
+	<target name="resource">
+		<copy todir="${dest}">
+			<fileset dir="${src}">
+				<include name="**/*.gif" />
+				<include name="**/*.properties" />
+				<include name="**/*.jpeg" />
+				<include name="**/*.png" />
+				<include name="**/*.jpg" />
+			</fileset>
+
+		</copy>
+	</target>
+	<target name="cleanup">
+		<delete failonerror="false" file="jar/chatting-server.jar" />
+	</target>
+</project>

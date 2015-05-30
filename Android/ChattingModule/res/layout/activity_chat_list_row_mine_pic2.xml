@@ -1,0 +1,12 @@
+<com.br.chat.view.FileUploadView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+    android:paddingBottom="3dip"
+    android:id="@+id/fileup"
+    android:paddingLeft="@dimen/chat_sideMargin"
+    android:paddingRight="10dip"
+    android:paddingTop="3dip" >
+
+  
+</com.br.chat.view.FileUploadView>

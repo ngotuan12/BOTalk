@@ -1,0 +1,30 @@
+package com.br.chat.util;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Random;
+
+public class CreateKey {
+
+	private static final char[] KEY_LIST = { '0', '1', '2', '3', '4', '5', '6',
+		'7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+		'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w',
+		'x', 'y', 'z' };
+	
+	private static Random rnd = new Random();
+	public static SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmssSSS");
+
+	private static String getRandomStr() {
+		char[] rchar = { KEY_LIST[rnd.nextInt(36)], KEY_LIST[rnd.nextInt(36)],
+				KEY_LIST[rnd.nextInt(36)], KEY_LIST[rnd.nextInt(36)],
+				KEY_LIST[rnd.nextInt(36)], KEY_LIST[rnd.nextInt(36)], KEY_LIST[rnd.nextInt(36)]
+				, KEY_LIST[rnd.nextInt(36)] };
+		return String.copyValueOf(rchar);
+	}
+		
+	public static String getFileKey() {
+			return getRandomStr()
+					+ dateFormat.format(new Date(System.currentTimeMillis()));
+		}		
+	
+}

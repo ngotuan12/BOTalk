@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BrainyxLib</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="back_finish">\'뒤로\'버튼 한번더 누르면 종료됩니다.</string>
+	<string name="hint_type_here">메세지를 입력하세요</string>
+	<string name="send">전송</string>
+	<string name="leaveChat">나가기</string>
+	<string name="inviteFriends">대화상대추가</string>
+	<string name="leftMessage">%1$s 님이 방을 나갔습니다.</string>
+	<string name="invitationMessage">%1$s 님께서 %2$s 님을 초대하였습니다.</string>
+	<string name="unknown">unknown</string>
+	<string name="action_activityMain">action_BoardTalksMain</string>
+	
+	<string name="action_activityChat">action_BoardTalksChat</string>
+	<string name="action_ReceiverRoom">android.intent.action.ReceiverChatRoombt</string>
+	<string name="action_ReceiverMember">android.intent.action.ReceiverMemberbt</string>
+	<string name="action_Background">android.intent.action.Backgroundbt</string>
+	<string name="activityFriendPicker">action_activityFriendPickerBt</string>
+	
+	<!--  -->
+	<string name="changeDensity">해상도변경</string>
+	<string name="reShoot">다시찍기</string>
+	<string name="done">완료</string>
+	<string name="file_saving">파일저장중..</string>
+	<string name="noti">알림</string>
+	<string name="Done">초대</string>
+	<string name="searchHint">이름으로 검색</string>
+	<string name="alert_title_noFriends">No friend</string>
+	<!-- <string name="action_activityFriendPIcker">action_activityFriendPicker</string> -->
+	<string name="alert_msg_leave">채팅방을 나가시겠습니까?</string>
+	
+</resources>

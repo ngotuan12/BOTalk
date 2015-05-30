@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#f6f6f6">
+    
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="#ff0000" 
+        android:layout_alignParentTop="true">
+
+          <ImageView
+            android:id="@+id/imgViewManageFriend"  
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:src="@drawable/title_bar_back_ico"
+            android:scaleType="center"
+            android:paddingRight="10dp"
+            android:onClick="exit"/>
+          
+        <TextView
+            android:id="@+id/titlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_white"
+            android:textSize="17sp" 
+            android:text="내 상태"/>
+        
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/color_white"
+            android:textSize="17sp" 
+            android:text="완료"/>
+
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/tv_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignLeft="@+id/edt_status"
+        android:layout_marginTop="35dp"
+        android:text="여기에 새로운 상태를 입력"/>
+    
+    <TextView 
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/edt_status"
+        android:layout_above="@+id/edt_status"
+        android:text=""/>
+    
+    <EditText
+            android:id="@+id/edt_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_guide"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:padding="7dp"
+            android:background="@drawable/button_round_white"
+            android:ems="10" 
+            android:hint="당신은 무슨 생각을?">
+
+            <requestFocus />
+        </EditText>
+    
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+
+
+    <!-- @Controller 스캔 : @Server, @Repository는 application-context.xml에서 스캔한다. -->
+    <context:component-scan base-package="kr.brainyx.chat" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+    </context:component-scan>
+     
+ 
+    <!-- 핸들러 매핑 : 요청에 맞는 컨트롤러를 매핑한다. 여러가지 핸들러 매핑을 혼용할 경우 우선순위를 order로 지정한다. -->
+    <bean id="annotationHandlerMapping" class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+        <property name="order" value="1" />
+    </bean>
+    
+    <!-- 핸들러 어뎁터
+    <bean id="annotationHandlerAdapter" class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
+     -->
+    
+    <!-- 핸들러 매핑 : Interceptors에서 로그인 여부를 먼저 체크한 후에 매핑된 bean으로 컨트롤러를 매핑한다. -->
+    <mvc:annotation-driven/>
+   
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/admin/*.go"/>
+            <bean class="kr.brainyx.chat.RequestInitializeInterceptor" />
+        </mvc:interceptor>
+    </mvc:interceptors>
+    
+    <!-- 뷰 리졸버 : Controller에서 처리후 반환된 ModelAndView를 가지고 해당되는 View를 찾아준다. -->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+        <property name="order" value="2"/>
+        <property name="prefix" value="/WEB-INF/views/" />
+        <property name="suffix" value=".jsp" />
+        <property name="contentType" value="text/html; charset=UTF-8"/>
+    </bean>
+
+    
+    
+	<!-- FileDownloadView클래스의 bean객체 설정 
+	<bean id="fileDownloadView" class="kr.brainyx.util.file.FileDownloadView" />
+	-->
+	
+	<!-- 따로 만든 커스텀 view를 쓰기 위한 viewResolver 설정 -->
+	<bean id="beanNameViewResolver" class="org.springframework.web.servlet.view.BeanNameViewResolver" >
+        <property name="order" value="1"/>
+	</bean>
+    
+    <!-- 뷰 리졸버 : Bean 이름으로 View를 찾아준다. -->
+    <!--
+    <bean id="beanNameViewResolver" class="org.springframework.web.servlet.view.BeanNameViewResolver">
+        <property name="order" value="2"/>
+    </bean>
+    -->
+         
+ 
+    <!-- 에러 페이지 처리 : 에러발생시 error라는 이름의 View로 연결된다. (위의 뷰 리졸버 설정의 경우 /jsp/error.jsp) -->
+    <!--
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="exceptionMappings">
+            <props>
+                <prop key="java.lang.Exception">error</prop>
+            </props>
+        </property>
+    </bean>
+    -->
+ 
+</beans>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:watch_attr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activtyChat_LinearLayout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/layoutHeader_h"
+            android:background="#ff0000"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/activityChat_TextView_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_plain_background"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="취소"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/fontSize_18" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/inviteFriends"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/fontSize_18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activityChat_TextView_done"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_plain_background"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/Done"
+                android:textColor="@color/color_cyan"
+                android:textSize="@dimen/fontSize_18" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/chatroom_actionBar_line"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_light_cyan" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/activityChat_EditText_search"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:focusableInTouchMode="true"
+        android:hint="@string/searchHint"
+        android:imeOptions="actionSearch"
+        android:maxLines="1"
+        android:paddingLeft="8dip"
+        android:paddingRight="4dip"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:orientation="vertical" >
+
+        <com.br.chat.listview.ExampleContactListView
+            android:id="@+id/fragmentFriendPicker_ListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="multipleChoice"
+            android:fadingEdge="none"
+            android:fillViewport="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/fragmentFriendPicker_TextView_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/alert_title_noFriends"
+            android:textColor="@color/font_color_alert"
+            android:textSize="@dimen/fontSize_16"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

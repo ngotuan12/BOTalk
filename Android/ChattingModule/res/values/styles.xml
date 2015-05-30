@@ -1,0 +1,248 @@
+<resources>
+	<!-- no title bar -->
+	<!-- <style name="AppBaseTheme" parent="@android:style/Theme.Light.NoTitleBar"> -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowBackground">@color/color_white</item>
+    </style>
+    
+
+    <style name="Line1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">@color/line_color1</item>
+    </style>
+    
+    <style name="Line_blue">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+        <item name="android:background">@color/color_light_cyan</item>
+    </style>
+    
+    <style name="Line2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">@color/line_color2</item>
+    </style>
+    
+    <style name="Line3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+        <item name="android:background">@color/line_color3</item>
+    </style>
+    
+    <!-- 헤더버튼-기본 -->
+    <style name="layoutHeaderButton">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/fontSize_12</item>
+    </style>
+    
+    <!-- 헤더버튼-흰색 -->
+    <style name="layoutHeaderWhiteButton_text" parent="layoutHeaderButton">
+        <item name="android:textColor">@color/button_font_color_2</item>
+        <item name="android:background">@drawable/button_round_white</item>
+        
+    </style>
+    
+    <!-- 헤더버튼-블루 -->
+    <style name="layoutHeaderBlueButton_text" parent="layoutHeaderButton">
+        <item name="android:textColor">@color/button_font_color_white</item>
+        <item name="android:background">@drawable/button_round_blue</item>
+    </style>
+    
+    <!-- 헤더버튼-빨강 -->
+    <style name="layoutHeaderRedButton_text" parent="layoutHeaderButton">
+        <item name="android:textColor">@color/button_font_color_white</item>
+        <item name="android:background">@drawable/button_round_red</item>
+    </style>
+    
+    <!-- 헤더버튼-회색(disable) -->
+    <style name="layoutHeaderDisabledButton_text" parent="layoutHeaderButton">
+        <item name="android:textColor">@color/button_font_color_4</item>
+        <item name="android:background">@drawable/button_round_lightgray</item>
+        <item name="android:shadowColor">@color/button_font_color_white</item>
+		<item name="android:shadowRadius">1.6</item>
+		<item name="android:shadowDx">1.3</item>
+    </style>
+    
+    <style name="layoutHeaderPlainButton_text" parent="layoutHeaderButton">
+        <item name="android:textColor">@color/color_black</item>
+    </style>
+    
+    <style name="layoutHeaderTitle_plainText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/fontSize_18</item>
+        <item name="android:textColor">@color/button_font_color_white</item>
+    </style>
+    
+    <style name="layoutHeaderTitle_shadowText" parent="layoutHeaderTitle_plainText">
+        <item name="android:shadowColor">@color/button_font_color_2</item>
+		<item name="android:shadowRadius">1.6</item>
+		<item name="android:shadowDx">1.3</item>
+    </style>
+    
+    
+    
+    <style name="navigationButton_text">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/fontSize_12</item>
+    </style>
+    
+    <style name="widgetButtonText_text">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/fontSize_12</item>
+    </style>
+    
+    <!-- Application theme. -->
+    <style name="AppThemeWhiteBg" parent="AppBaseTheme">
+        <item name="android:windowBackground">@color/color_white</item>
+    </style>
+    
+    <style name="AppThemeChat" parent="AppBaseTheme">
+        <!-- item name="android:windowContentOverlay">@drawable/actionbar_line_chat</item-->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <!--You may know card -->
+    <style name="carddemo_mayknow_main_inner_title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginLeft">@dimen/card_header_simple_title_margin_left</item>
+    </style>
+
+    <style name="carddemo_mayknow_main_inner_title.sub">
+        <item name="android:textSize">1sp</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+    
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++   -->
+
+    <!-- Myapps style -->
+
+    <style name="carddemo_myapps_main_inner_ratingbar"  >
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/ratingbar_small_holo_dark</item>
+        <item name="android:indeterminateDrawable">@drawable/ratingbar_small_holo_dark</item>
+        <item name="android:minHeight">12dip</item>
+        <item name="android:maxHeight">12dip</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <style name="carddemo_myapps_main_inner_secondarytitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="carddemo_myapps_main_inner_title">
+         <item name="android:textSize">18sp</item>
+         <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++   -->
+    
+    <style name="Line3_margin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+        <item name="android:layout_marginLeft">@dimen/StudyLogListSide_padding</item>
+        <item name="android:layout_marginRight">@dimen/StudyLogListSide_padding</item>
+        <item name="android:background">@color/line_color3</item>
+    </style>
+    
+    <style name="userInfoTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/userInfoSectionRow_h</item>
+        <item name="android:layout_marginLeft">@dimen/userInfo_paddingLeft</item>
+        <item name="android:textSize">@dimen/fontSize_Mid</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    
+    <style name="TextView_WtopWatchViewer">
+        <item name="android:textColor">@color/button_font_color_timer</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="TextView_WtopWatchViewer_divider" parent="TextView_WtopWatchViewer">
+        <item name="android:textSize">@dimen/fontSize_stopwatch_divider</item>
+    </style>
+    
+    <style name="groupStudyLogo_list">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/fontSize_8</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="groupStudyLogo_timeMain" parent="groupStudyLogo_list">
+        <item name="android:textSize">@dimen/groupStudyLogo_textSize_timeMain</item>
+        <item name="android:textColor">@color/color_darkgray</item>
+    </style>
+    
+    <style name="groupStudyLogo_timeSub" parent="groupStudyLogo_list">
+        <item name="android:textSize">@dimen/groupStudyLogo_textSize_timeSub</item>
+        <item name="android:textColor">@color/color_darkgray</item>
+    </style>
+    
+    <style name="groupStudyLogo_timeTotal" parent="groupStudyLogo_list">
+        <item name="android:textSize">@dimen/groupStudyLogo_textSize_timeTotal</item>
+        <item name="android:textColor">@color/groupStudyRoomLog_totalView</item>
+    </style>
+    
+    <style name="groupStudyLogo_dayofweek" parent="groupStudyLogo_list">
+        <item name="android:textSize">@dimen/groupStudyLogo_textSize_timeDayOfWeek</item>
+        <item name="android:textColor">@color/color_darkgray</item>
+    </style>
+    
+    <style name="studyLogWeekly_redBoxText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/fontSize_6</item>
+        <item name="android:textColor">@color/color_softRed</item>
+    </style>
+    
+    <style name="shadow_timeLine">
+        <item name="android:shadowColor">@color/color_white</item>
+        <item name="android:shadowRadius">1.6</item>
+        <item name="android:shadowDx">1.8</item>
+    </style>
+    
+    <!--  -->
+        <style name="buttonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_darkgray</item>
+        <item name="android:textSize">@dimen/buttonTextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--  -->
+    
+    <style name="TransDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Dialog</item>
+        <item name="android:windowBackground">@+android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+      <style name="AppThemeChat" parent="@style/Theme.AppCompat.Light">
+
+        <!-- item name="android:windowContentOverlay">@drawable/actionbar_line_chat</item -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+</resources>

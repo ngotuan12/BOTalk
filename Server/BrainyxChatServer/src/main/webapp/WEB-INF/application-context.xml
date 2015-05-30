@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	<!-- 어노테이션이 적용된 class( @Controller, @Service, @Repository 를 포함한 class )를 
+		로딩 base-package로 부터 스캔을 할 때 Controller 타입은 제외 시킨다. 제외 시키는 이유는 spring mvc에 
+		관련된 설정 파일은 dispatcher-servlet.xml 에서 스캔 하기 때문이다. scoped-proxy 는 아래의 3가지를 
+		지정할 수 있다. 1. no : default, proxy를 생성하지 않는다. 2. interface : JDK Dynamic Proxy를 
+		이용한 Proxy 생성 3. targetClass : CGLIB(code generator library)를 이용한 Proxy 생성 -->
+	<context:component-scan base-package="kr.brainyx.basic"
+		scoped-proxy="no">
+		<context:exclude-filter type="annotation"
+			expression="org.springframework.stereotype.Controller" />
+	</context:component-scan>
+
+	<!-- 프로퍼티 파일을 가져온다. -->
+	<util:properties id="config" location="classpath:config.properties" />
+
+	<!-- DB 연결 -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="#{config['jdbc.driverClassName']}" />
+		<property name="url" value="#{config['jdbc.url']}" />
+		<property name="username" value="#{config['jdbc.username']}"></property>
+		<property name="password" value="#{config['jdbc.password']}"></property>
+	</bean>
+
+	<bean id="userDao" class="kr.brainyx.chat.dao.UserDao">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+	<bean id="memberDao" class="kr.brainyx.chat.dao.MemberDao">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	
+	<bean id="memberPostDao" class="kr.brainyx.chat.dao.MemberPostDao">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+</beans>

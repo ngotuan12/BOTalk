@@ -1,0 +1,10 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listHeaderChat_TextView_header"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+   	android:paddingLeft="10dip"
+   	android:paddingRight="10dip"
+    android:background="@drawable/button_roundmore_half_transparent"
+    android:textColor="#fff"
+    android:textSize="13sp" />

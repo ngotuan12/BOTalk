@@ -1,0 +1,92 @@
+<com.br.chat.view.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/adapterContactItem_view_line"
+            style="@style/Line1" />
+
+        <TextView
+            android:id="@+id/adapterContactItem_sectionTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/contactListItem_header_h"
+            android:gravity="left|bottom"
+            android:text="A"
+            android:textColor="@color/font_color_2"
+            android:textSize="@dimen/fontSize_13"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/infoRowContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/contactListItem_section_h"
+            android:background="@drawable/button_plain_background"
+            android:gravity="center_vertical"
+            android:weightSum="1" >
+
+            <com.br.chat.view.InertCheckBox
+                android:id="@+id/adapterContactItem_InertCheckBox"
+                android:layout_width="@dimen/contactListItem_radioButton_w"
+                android:layout_height="@dimen/contactListItem_radioButton_h"
+                android:button="@drawable/radiobutton_contact"
+                android:focusable="false" />
+
+            <com.br.chat.view.CircleImageView1
+                android:id="@+id/contact_ImageView_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp" />
+
+            <!--
+                 <ImageView
+                android:id="@+id/contact_ImageView_face"
+                android:layout_width="@dimen/list_item_user_image2"
+                android:layout_height="@dimen/list_item_user_image2"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+               android:scaleType="centerCrop"
+                android:layout_marginRight="10dp"
+                android:background="@color/chatPic_bg" />
+            -->
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/nickNameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Fullname"
+                    android:textColor="@color/font_color_2"
+                    android:textSize="@dimen/fontSize_15"
+                    android:textStyle="bold" />
+
+                <!--
+                     <TextView
+                    android:id="@+id/fullNameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nickNameView"
+                    android:text="Fullname"
+                    android:textColor="@color/font_color_9"
+                    android:textSize="@dimen/fontSize_15"
+                    android:textStyle="bold" />
+                -->
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.br.chat.view.CheckableRelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatroom_row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip" 
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/facelayout"
+        android:layout_width="62dip"
+        android:layout_height="62dip" >
+
+        <com.br.chat.view.ChatRoomFaceView
+            android:id="@+id/roomfaceview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dip" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/f_list_prf_img_bg" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/room_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/room_item_newmsg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/room_item_date"
+        android:layout_marginTop="4dip"
+        android:background="@drawable/tabbar_badge"
+        android:gravity="center"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/fontSize_14"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/room_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/facelayout"
+        android:gravity="left"
+        android:maxWidth="170dip"
+        android:singleLine="true"
+        android:text="qwerqwrqwr"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/membersizeimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@id/room_item_title"
+        android:background="@drawable/chat_list_friend_ico" />
+
+    <TextView
+        android:id="@+id/membersize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/room_item_title"
+        android:layout_alignTop="@id/room_item_title"
+        android:layout_marginLeft="3dip"
+        android:layout_toRightOf="@id/membersizeimg"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/color_lightgray"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/room_item_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/room_item_title"
+        android:layout_marginTop="4dip"
+         android:layout_marginLeft="10dip"
+        android:layout_toLeftOf="@id/room_item_newmsg"
+        android:layout_toRightOf="@id/facelayout"
+        android:ellipsize="marquee"
+        android:gravity="left"
+        android:maxLines="2"
+        android:textSize="15sp" />
+
+</RelativeLayout>

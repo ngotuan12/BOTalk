@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+    android:paddingBottom="3dip"
+    android:paddingLeft="@dimen/chat_sideMargin"
+    android:paddingRight="10dip"
+    android:paddingTop="3dip" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <ImageView
+            android:id="@+id/activityChatListRowMineText_ImageView_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/chatTime_marginBottom"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/ic_action_info"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/activityChatListRowMineText_ProgressBar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/chatTime_marginBottom"
+            android:layout_marginRight="9.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textview_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/chatTime_marginBottom"
+            android:layout_marginLeft="@dimen/chat_dateMargin"
+            android:layout_marginRight="@dimen/chat_marginBetween"
+            android:singleLine="true"
+            android:textColor="@color/font_color_5"
+            android:textSize="@dimen/fontSize_10" />
+        
+        <TextView
+            android:id="@+id/activityChatListRowMineText_TextView_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/chatTime_marginBottom"
+            android:layout_marginLeft="@dimen/chat_dateMargin"
+            android:layout_marginRight="@dimen/chat_marginBetween"
+            android:singleLine="true"
+            android:textColor="@color/font_color_5"
+            android:textSize="@dimen/fontSize_10" />
+
+        <com.rockerhieu.emojicon.EmojiconTextView
+            android:id="@+id/activityChatListRowMineText_TextView_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:autoLink="all"
+            android:background="@drawable/chat_talk_bb_me"
+            android:gravity="center_vertical"
+            android:linksClickable="true"
+            android:longClickable="true"
+            android:paddingBottom="3dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="17dip"
+            android:text="asfasfasf"
+            android:paddingTop="3dip"
+            android:textColorLink="@color/color_white"
+            android:textSize="@dimen/fontSize_16" />
+    </LinearLayout>
+
+</RelativeLayout>

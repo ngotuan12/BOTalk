@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ProgressBar
+        android:id="@+id/widgetProgressbar_ProgressBarHolo"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/widget_spinner_holo"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/widgetProgressbar_ProgressBarGinger"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

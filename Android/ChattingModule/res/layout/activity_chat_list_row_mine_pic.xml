@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+    android:paddingBottom="3dip"
+    android:paddingLeft="@dimen/chat_sideMargin"
+    android:paddingRight="10dip"
+    android:paddingTop="3dip" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <ImageView
+            android:id="@+id/activityChatListRowMinePic_ImageView_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/chatTime_marginBottom"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/ic_action_info"
+            android:visibility="gone" />
+
+           <TextView
+            android:id="@+id/textview_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/chatTime_marginBottom"
+            android:layout_marginLeft="@dimen/chat_dateMargin"
+            android:layout_marginRight="@dimen/chat_marginBetween"
+            android:singleLine="true"
+            android:textColor="@color/font_color_5"
+            android:textSize="@dimen/fontSize_10" />
+              
+        <ProgressBar
+            android:id="@+id/activityChatListRowMinePic_ProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/chatTime_marginBottom"
+            android:layout_marginRight="9.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/activityChatListRowMinePic_TextView_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/chatTime_marginBottom"
+            android:layout_marginLeft="@dimen/chat_dateMargin"
+            android:layout_marginRight="@dimen/chat_marginBetween"
+            android:singleLine="true"
+            android:textColor="@color/font_color_5"
+            android:textSize="@dimen/fontSize_10" />
+
+      <!--   <com.br.chat.view.TopAlignedImageView
+            android:id="@+id/activityChatListRowMinePic_ImageView_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/chatPicSize2"
+            android:maxHeight="@dimen/chatPicSizeheight"
+            android:minWidth="@dimen/chatPicSize2"
+            android:minHeight="@dimen/chatPicSizeheight"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:background="@color/chatPic_bg"
+            android:cropToPadding="true"
+            android:gravity="center_vertical"
+            android:linksClickable="true"
+            android:longClickable="true"
+            android:scaleType="matrix" /> -->
+              <com.br.chat.view.TopAlignedImageView
+            android:id="@+id/activityChatListRowMinePic_ImageView_pic"
+            android:layout_width="@dimen/chatPicSize"
+            android:layout_height="@dimen/chatPicSize"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:background="@color/chatPic_bg"
+            android:cropToPadding="true"
+            android:gravity="center_vertical"
+            android:linksClickable="true"
+            android:longClickable="true"
+            android:scaleType="matrix" />
+    </LinearLayout>
+
+</RelativeLayout>

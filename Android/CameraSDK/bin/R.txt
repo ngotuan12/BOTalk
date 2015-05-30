@@ -1,0 +1,2 @@
+int id surface_camera 0x7f030000
+int layout video_main 0x7f020000

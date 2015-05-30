@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/button_plain_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:weightSum="1" >
+
+        <FrameLayout
+            android:layout_width="@dimen/list_item_user_image1_background"
+            android:layout_height="@dimen/list_item_user_image1_background" >
+
+            <com.br.chat.view.TopAlignedImageView
+                android:id="@+id/adapterDrawerChatUserItem_ImageView_face"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@drawable/menu_chat_prf_man"
+                android:cropToPadding="true"
+                android:linksClickable="true"
+                android:longClickable="true"
+                android:scaleType="matrix" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/menu_chat_prf_bg" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_marginLeft="5dip"
+            android:id="@+id/adapterDrawerChatUserItem_TextView_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/inviteFriends"
+            android:textColor="@color/font_color_2"
+            android:textSize="@dimen/fontSize_16"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/adapterDrawerChatUserItem_View_line"
+        style="@style/Line1"
+        android:layout_marginLeft="@dimen/chatDrawer_margineLeft" />
+
+</LinearLayout>

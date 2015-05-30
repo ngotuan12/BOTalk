@@ -1,0 +1,8 @@
+keep com.google.android.gms.auth.*
+keep com.google.android.gms.common.*
+keep com.google.android.gms.ads.*
+keep com.google.android.gms.gcm.*
+keep com.google.android.gms.plus.*
+keep com.google.android.gms.maps.*
+keep com.google.android.gms.location.*
+keep com.google.ads.*

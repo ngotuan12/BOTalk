@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/layoutHeader_h"
+            android:background="#ff0000"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <ImageButton
+                android:id="@+id/activityChat_ImageButton_close"
+                android:layout_width="@dimen/layoutHeader_h"
+                android:layout_height="@dimen/layoutHeader_h"
+                android:background="@drawable/button_plain_background"
+                android:scaleType="center"
+                android:src="@drawable/ico_back" />
+
+            <TextView
+                android:id="@+id/activityChat_TextView_mainTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="사진 모아보기"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/fontSize_18"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/chatroom_actionBar_line"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_light_cyan" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="650" >
+
+        <GridView
+            android:id="@+id/gvImageList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:listSelector="#00000000"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/no_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/photo_moa_empty_ment" />
+    </RelativeLayout>
+
+</LinearLayout>

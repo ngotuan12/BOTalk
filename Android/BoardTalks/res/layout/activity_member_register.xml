@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:layout_below="@+id/tv_skip">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="여기에 당신이 회원으로 가입 할 수 있습니다" 
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="@drawable/button_round_red"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/button_round_white"
+            android:hint="귀하의 이메일"
+            android:inputType="textEmailAddress"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="5dp">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" 
+            android:background="@drawable/button_round_white"
+            android:hint="암호"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="5dp"/>
+        
+        <EditText
+            android:id="@+id/edt_retype_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" 
+            android:background="@drawable/button_round_white"
+            android:hint="암호를 다시 입력"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"/>
+
+        <LinearLayout
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:background="@drawable/button_bottom_round_white"
+            android:gravity="center"
+            android:padding="7dp"
+            android:onClick="register">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="가입" 
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/red"/>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:src="@drawable/smiley" 
+                android:adjustViewBounds="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+</LinearLayout>
+
+<TextView
+    android:id="@+id/tv_skip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="건너뛰기"
+    android:textColor="@color/red" 
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="20dp"
+    android:clickable="true"
+    android:onClick="skipToProfile"/>
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_alignParentBottom="true"
+        android:padding="9dp"
+        android:background="@color/red"
+        android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:src="@drawable/bo_talks" 
+        android:adjustViewBounds="true"/>
+
+    </LinearLayout>
+</RelativeLayout>

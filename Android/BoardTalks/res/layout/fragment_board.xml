@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView 
+        android:id="@+id/tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
+        android:text="채팅"
+        android:textColor="@color/red"/>
+    <TextView 
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_category"
+        android:layout_alignBottom="@+id/tv_category"
+        android:layout_marginLeft="1dp"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        android:text="132"/>
+    <View 
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@+id/tv_category"
+        android:background="#ffcdce"/>
+    <ListView
+        android:id="@+id/lv_posts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="#ffcdce"
+    android:dividerHeight="1.5dp"
+    android:layout_below="@+id/line">
+    </ListView>
+    
+</RelativeLayout>

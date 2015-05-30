@@ -1,0 +1,1 @@
+java -jar jarjar-1.4.jar process google-play-services.rules google-play-services.jar libs\google-play-services-stripped.jar

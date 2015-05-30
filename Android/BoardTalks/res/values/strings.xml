@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">보톡스</string>
+	<!-- 1.28 -->
+    <string name="join_ment1">본인의 휴대전화 번호를 입력해주세요</string>
+   
+    
+    <string name="join_ment2">입력하신 전화번호로  </string>
+    <string name="join_ment3">&lt;u>인증번호&lt;/u></string>
+    <string name="join_ment4">  를 보내드립니다.</string>
+    <string name="phone_login_guide">본인의 휴대전화 번호를 입력해주세요.</string>
+    <string name="phone_login_country">Republic of Korea</string>
+    <string name="find_pass_acount"><u>계정 찾기 / 비밀번호 찾기</u></string>
+    <string name="register"><u>계정등록</u></string>
+    
+    <string-array name="country_code_array">
+        
+        <item>Republic of Korea (+82)</item>
+        
+    </string-array>
+    
+</resources>

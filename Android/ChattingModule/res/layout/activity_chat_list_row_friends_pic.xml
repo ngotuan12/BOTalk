@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+    android:clickable="true"
+    android:focusable="false"
+    android:id="@+id/friend_pic"
+    android:paddingBottom="7dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="@dimen/chat_sideMargin"
+    android:paddingTop="3dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip" >
+
+        <com.br.chat.view.CircleImageView1
+            android:id="@+id/activityChatListRowFriendsPic_CircleImageView1_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/activityChatListRowFriendsPic_LinearLayout_MessageBox"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:id="@+id/activityChatListRowFriendsPic_LinearLayout_MessageBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/activityChatListRowFriendsPic_CircleImageView1_face"
+            android:minHeight="50dp"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:id="@+id/activityChatListRowFriendsPic_LinearLayout_messageBox"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/activityChatListRowFriendsPic_TextView_nickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/fontSize_14"
+                    android:textStyle="bold" />
+
+             <!--    <com.br.chat.view.TopAlignedImageView
+                    android:id="@+id/activityChatListRowFriendsPic_ImageView_pic"
+                     android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:maxWidth="@dimen/chatPicSize2"
+		            android:maxHeight="@dimen/chatPicSizeheight"
+		            android:minWidth="@dimen/chatPicSize2"
+		            android:minHeight="@dimen/chatPicSizeheight"
+                    android:adjustViewBounds="true"
+                    android:background="@color/chatPic_bg"
+                    android:cropToPadding="true"
+                    android:linksClickable="true"
+                    android:longClickable="true"
+                    android:scaleType="matrix" /> -->
+                           <com.br.chat.view.TopAlignedImageView
+                    android:id="@+id/activityChatListRowFriendsPic_ImageView_pic"
+                     android:layout_width="@dimen/chatPicSize"
+		            android:layout_height="@dimen/chatPicSize"
+                    android:adjustViewBounds="true"
+                    android:background="@color/chatPic_bg"
+                    android:cropToPadding="true"
+                    android:linksClickable="true"
+                    android:longClickable="true"
+                    android:scaleType="matrix" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activityChatListRowFriendsPic_TextView_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/chatTime_marginBottom"
+                android:layout_marginLeft="@dimen/chat_marginBetween"
+                android:layout_marginRight="@dimen/chat_dateMargin"
+                android:singleLine="true"
+                android:textColor="@color/font_color_5"
+                android:textSize="@dimen/fontSize_10" />
+
+            <TextView
+                android:id="@+id/textview_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/chatTime_marginBottom"
+                android:layout_marginLeft="@dimen/chat_dateMargin"
+                android:layout_marginRight="@dimen/chat_marginBetween"
+                android:singleLine="true"
+                android:textColor="@color/font_color_5"
+                android:textSize="@dimen/fontSize_10" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

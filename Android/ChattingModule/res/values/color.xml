@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tranfarent_color">#00000000</color>
+    <color name="default_color_blue">#1da7e9</color>
+    <color name="star_box_transparent">#bb000000</color>
+
+    <!-- side view -->
+    <color name="sidemenu_background">#444444</color>
+    <color name="sidemenu_background_2">#4a4a4a</color>
+    <color name="sidemenu_font_title">#ffffff</color>
+    <color name="sidemenu_font_1">#cccccc</color>
+    <color name="sidemenu_font_2">#dddddd</color>
+    <color name="sidemenu_font_2_on">#1da7e9</color>
+    
+    <!-- SwipeRefreshLayout -->
+    <color name="swype_1">#ff92ff2f</color>
+    <color name="swype_2">#ffffbc00</color>
+    <color name="swype_3">#ff12ffa0</color>
+    <color name="swype_4">#ffff6724</color>
+    
+    <color name="tab_background">#ffffff</color>
+    <color name="books_dialog_background">#f1f1f1</color>
+    <color name="books_dialog_line_color">#7f7f7f</color>
+
+    <!-- button over color -->
+    <color name="button_over_color">#e5e5e5</color>
+	<color name="popup_over_color">#c7eaff</color>
+    
+	<color name="dialog_transparent_black">#c0000000</color>
+	<color name="half_transparent_black">#10000000</color>
+	<color name="half_transparent_black2">#50000000</color>
+	<color name="half_transparent_red">#50ff0000</color>
+	<color name="bg_item_friend_feed_more">#cccccc</color>
+    
+	<color name="dialog_bg_litghtTransprent">#50000000</color>
+	<color name="dialog_bg_transprent">#a0000000</color>
+
+    <!-- default color -->
+    <color name="bp_color_white">#ffffff</color>
+    <color name="bp_color_2">#f9f9f9</color>
+    <color name="bp_color_3">#f3f3f3</color>
+    <color name="bp_color_4">#e5e5e5</color>
+    <color name="bp_color_5">#f0f0f0</color>
+    <color name="bg_networkAlert">#e0777777</color>
+    
+    
+    <color name="color_orange">@color/stopWatchColor_02</color>
+    <color name="color_green">@color/stopWatchColor_21</color>
+    <color name="color_cyan">#1fb1f7</color>
+    <color name="color_light_cyan">#94d5f4</color>
+    <color name="color_coral">#ee6228</color>
+    <color name="color_darkgray">#666666</color>
+    <color name="color_lightgray">@color/stopWatchColor_19</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
+    <color name="color_mint">#64d3b2</color>
+    <color name="color_basicBackground">#e0e1e2</color>
+    
+    <!-- 설정 -->
+    <color name="white">#ffffff</color>
+    <color name="red">#ff020c</color>
+    <color name="color_softRed">#ec615c</color>
+    <color name="color_darkMint">#6ac6b9</color>
+    <color name="color_beige">#e6e3de</color>
+    
+    <color name="color_chat_bg_mine">#43b4fb</color>
+    <color name="color_chat_bg_friends">#e5e5ea</color>
+
+    <!-- font color -->
+    <color name="font_color_w">#1dadff</color>
+    <color name="font_color_2">#222222</color>
+    <color name="font_color_3">#777777</color>
+    <color name="font_color_4">#999999</color>
+    <color name="font_color_5">#888888</color>
+    <color name="font_color_6">#555555</color>
+    <color name="font_color_7">#4269b4</color>
+    <color name="font_color_8">#f41485</color>
+    <color name="font_color_9">#c0e1f0</color>
+    
+
+    <color name="button_font_color_white">#ffffff</color>
+    
+    <color name="button_font_color_2">#333333</color>
+    <color name="button_font_color_4">#999999</color>
+    <color name="button_font_color_5">#888888</color>
+    <color name="button_font_color_6">#555555</color>
+    <color name="button_font_color_7">#4269b4</color>
+    <color name="button_font_color_8">#f41485</color>
+    <color name="button_font_color_timer">#000000</color>
+    <color name="button_font_color_orange">#ed5e25</color>
+
+    <color name="button_font_disable">#dddddd</color>
+    
+    <color name="font_color_alert">#ff6633</color>
+    
+    <!-- line color -->
+    <color name="line_color1">#e5e5e5</color>
+    <color name="line_color2">#c0c0c0</color>
+    <color name="line_color3">#d0d0d0</color>
+    
+    <color name="writeDialogLine_color3">#e2e2e2</color>
+    <color name="roundButton_shadowColor">#ccc</color>
+    
+	<!-- stopWatch color circle -->
+	<color name="stopWatchColor_00">#000000</color>
+	<color name="stopWatchColor_01">#FF5E3A</color>
+	<color name="stopWatchColor_02">#FF9500</color>
+	<color name="stopWatchColor_03">#FFDB4C</color>
+	<color name="stopWatchColor_04">#87FC70</color>
+	<color name="stopWatchColor_05">#52EDC7</color>
+	<color name="stopWatchColor_06">#1AD6FD</color>
+	<color name="stopWatchColor_07">#C644FC</color>
+	<color name="stopWatchColor_08">#EF4DB6</color>
+	<color name="stopWatchColor_09">#4A4A4A</color>
+	<color name="stopWatchColor_10">#898C90</color>
+	<color name="stopWatchColor_11">#FF3B30</color>
+	<color name="stopWatchColor_12">#FF9500</color>
+	<color name="stopWatchColor_13">#FFCC00</color>
+	<color name="stopWatchColor_14">#4CD964</color>
+	<color name="stopWatchColor_15">#34AADC</color>
+	<color name="stopWatchColor_16">#007AFF</color>
+	<color name="stopWatchColor_17">#5856D6</color>
+	<color name="stopWatchColor_18">#FF2D55</color>
+	<color name="stopWatchColor_19">#8E8E93</color>
+	<color name="stopWatchColor_20">#C7C7CC</color>
+	<color name="stopWatchColor_21">#5AD427</color>
+	<color name="stopWatchColor_22">#C86EDF</color>
+	<color name="stopWatchColor_23">#FF5B37</color>
+	<color name="stopWatchColor_24">#1D77EF</color>
+	<color name="stopWatchColor_25">#FF4981</color>
+	<color name="stopWatchColor_26">#FF1300</color>
+	<color name="stopWatchColor_27">#1F1F21</color>
+	<color name="stopWatchColor_28">#BDBEC2</color>
+	<color name="stopWatchColor_29">#FF3A2D</color>
+	
+	<!-- studyLog header color -->
+	<color name="listHeader_color_01">#FFBB33</color>
+    <color name="listHeader_color_02">#98CC00</color>
+    <color name="listHeader_color_03">#A966CC</color>
+    <color name="listHeader_color_04">#33B4E4</color>
+    <color name="listHeader_color_05">#FF4343</color>
+    
+    <color name="groupStudyRoomLog_extraInfo">#8E8E93</color>
+    
+    <color name="groupStudyRoomLog_break">#D7D7D7</color>
+    <color name="groupStudyRoomLog_totalView">@color/color_softRed</color>
+
+    <!-- color card -->
+    <color name="demoextra_card_background_color1">#FFBB33</color>
+    <color name="demoextra_card_background_color2">#98CC00</color>
+    <color name="demoextra_card_background_color3">#A966CC</color>
+    <color name="demoextra_card_background_color4">#33B4E4</color>
+    <color name="demoextra_card_background_color5">#FF4343</color>
+
+    <color name="card_pressed">#7E0099CC</color>
+    <color name="card_activated">#CFE9F3</color>
+
+    <color name="titleBarColor_drakgray">#FF666666</color>
+    <color name="titleBarColor_green">#FF96AA39</color>
+    <color name="titleBarColor_red">#FFC74B46</color>
+    <color name="titleBarColor_lightRed">#FFF4842D</color>
+    <color name="titleBarColor_blue">#FF3F9FE0</color>
+    <color name="titleBarColor_navy">#FF5161BC</color>
+    <color name="titleBarColor_mint">#FF59a59a</color>
+    
+    <color name="graphColor_lightYellow">#FFDB4C</color>
+    <color name="chatPic_bg">#f3f3f3</color>
+    
+    <color name="abs__background_holo_light">#fff3f3f3</color>
+    <color name="color_blue">#0099CC</color>
+</resources>
