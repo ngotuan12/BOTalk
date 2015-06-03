@@ -1625,5 +1625,88 @@ public class MemberController
 
 		return null;
 	}
-
+	/**
+	 * @author TuanNA
+	 * @since 05-14-2015
+	 * @return
+	 */
+	@RequestMapping("/m_update_member_url.go")
+	public String mUpdateMemberUrl(
+			@RequestParam(value = "user_seq", required = true, defaultValue = "") int userSeq,
+			@RequestParam(value = "url", required = true, defaultValue = "") String url,
+			HttpSession session, HttpServletResponse res, Model model)
+	{
+		Map<String, Object> responseMessage = new HashMap<String, Object>();
+		String msg_code = "USER_PROFILE_009";
+		String msg_str = "Update Member url success!";
+		boolean result = true;
+		try
+		{
+			memberDao.updateMemberUrl(userSeq, url);
+			
+		}
+		catch (Exception ex)
+		{
+			result = false;
+			msg_code = "SYS-001";
+			msg_str = ex.getMessage();
+			ex.printStackTrace();
+		}
+		finally
+		{
+			// response variable
+			responseMessage.put("result", result);
+			responseMessage.put("msg_code", msg_code);
+			responseMessage.put("msg_str", msg_str);
+			// response
+			JSONObject jsonObject = JSONObject.fromObject(responseMessage);
+			Gson gson = new Gson();
+			String outputStr = gson.toJson(jsonObject);
+			Response.responseWrite(res, outputStr);
+		}
+		return null;
+	}
+	
+	/**
+	 * @author TuanNA
+	 * @since 05-14-2015
+	 * @return
+	 */
+	@RequestMapping("/m_get_member_url.go")
+	public String mGetMemberUrl(
+			@RequestParam(value = "user_seq", required = true, defaultValue = "") int userSeq,
+			HttpSession session, HttpServletResponse res, Model model)
+	{
+		Map<String, Object> responseMessage = new HashMap<String, Object>();
+		String msg_code = "USER_PROFILE_010";
+		String msg_str = "Get Member url success!";
+		boolean result = true;
+		String url = "";
+		try
+		{
+			url = memberDao.getMemberUrl(userSeq);
+			
+		}
+		catch (Exception ex)
+		{
+			result = false;
+			msg_code = "SYS-001";
+			msg_str = ex.getMessage();
+			ex.printStackTrace();
+		}
+		finally
+		{
+			// response variable
+			responseMessage.put("result", result);
+			responseMessage.put("msg_code", msg_code);
+			responseMessage.put("msg_str", msg_str);
+			responseMessage.put("url", url);
+			// response
+			JSONObject jsonObject = JSONObject.fromObject(responseMessage);
+			Gson gson = new Gson();
+			String outputStr = gson.toJson(jsonObject);
+			Response.responseWrite(res, outputStr);
+		}
+		return null;
+	}
 }

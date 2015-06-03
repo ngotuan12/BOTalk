@@ -170,8 +170,6 @@ public class MemberDao
 		return this.jdbcTemplate.queryForInt(query, new Object[] {}) > 0;
 	}
 
-	
-
 	/**
 	 * 푸시키가져오기SEQ
 	 * 
@@ -320,9 +318,10 @@ public class MemberDao
 				+ " FROM b_member b "
 				+ " WHERE "
 				+ " EXISTS (SELECT phone_no FROM b_member_contact WHERE user_seq = ? AND phone_no = b.user_phone) ";
-//				+ " AND NOT EXISTS (SELECT 1 FROM b_member_friend WHERE  user_seq = ? AND friend_seq = b.user_seq) ";
+		// +
+		// " AND NOT EXISTS (SELECT 1 FROM b_member_friend WHERE  user_seq = ? AND friend_seq = b.user_seq) ";
 		return (List<Member>) this.jdbcTemplate.query(strSQL, new Object[] {
-				userSeq
+			userSeq
 		}, userMapper2);
 	}
 
@@ -859,9 +858,30 @@ public class MemberDao
 		{
 			strNormalizedPhone = phoneNo;
 		}
-		else 
-			strNormalizedPhone = prefixCode + phoneNo;
+		else strNormalizedPhone = prefixCode + phoneNo;
 		return strNormalizedPhone;
 	}
 
+	/**
+	 * 푸시키중복제거
+	 * 
+	 * @param pushKey
+	 */
+	public void updateMemberUrl(int userSeq, String url)
+	{
+		String query = "" + "UPDATE b_member SET " + " url = ? "
+				+ "WHERE user_seq = ? ";
+		this.jdbcTemplate.update(query, new Object[] {
+				url, userSeq
+		});
+	}
+
+	public String getMemberUrl(int userSeq)
+	{
+		String query = "SELECT `url` FROM b_member " + "WHERE user_seq = ? ";
+		return this.jdbcTemplate.queryForObject(query, new Object[] {
+			userSeq
+		}, String.class);
+
+	}
 }
